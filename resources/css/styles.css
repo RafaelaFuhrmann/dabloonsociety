@@ -1,0 +1,245 @@
+html {
+    font-size: 16;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #F7F8F8;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    color: #161618;
+}
+
+header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #F7F8F8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+@media only screen and (min-width: 2000px) {
+    h1 a {
+        font-size: 5rem;
+        text-decoration: none;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        margin: .5rem;
+    }
+    
+    a {
+        font-size: 2rem;
+        color: #161618;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+    
+    span {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+    }    
+}
+
+
+@media only screen and (max-width: 2000px) {
+    
+    h1 a {
+        font-size: 4rem;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        margin: .5rem;
+    }
+    
+    a {
+        font-size: 2rem;
+        color: #161618;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+    
+    span {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+    }
+}
+
+
+.mission,
+.portfolio,
+.team {
+    display: flex;
+    text-align: center;
+}
+
+/*Mission*/
+
+.mission {
+    background-image: url(../pictures/HQ-large.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission h2,
+.mission p {
+    color: white;
+    text-shadow: 2px 2px 3px #161618;
+    max-width: 50%;
+}
+
+/*portfolio*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio p {
+    margin: 0;
+    padding: .5rem;
+}
+
+.textbox {
+    padding: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-picture {
+    width: 25%;
+    height: auto;
+    padding: 2rem;
+}
+
+.portfolio-picture img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*Our Team*/
+
+.team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #CDC0B4;
+    border: 5px solid #CDC0B4;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.portrait {
+    width: 25%;
+    height: auto;
+    padding: 2rem;
+}
+
+.portrait img {
+    width: 100%;
+    height: auto;
+}
+
+.copyright p {
+    font-size: .75rem;
+    text-align: left;
+    padding: .5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        top: 0;
+        background-color: #F7F8F8;
+    }
+
+    nav {
+       display: none;
+    }
+
+    .mission {
+        background-image: url(../pictures/HQ-large.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 30rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission h2,
+    .mission p {
+    color: white;
+    text-shadow: 2px 2px 3px #161618;
+    max-width: 75%;
+    }
+    
+    .portfolio-picture {
+        width: 100%;
+    }
+
+    .portrait {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 778px) and (min-width: 480px) {
+
+    .mission h2,
+    .mission p {
+        color: white;
+        text-shadow: 2px 2px 3px #161618;
+        max-width: 75%;
+    }
+
+    .portfolio-picture {
+        width: 40%;
+    }
+
+    .portrait {
+        width: 40%;
+    }
+}
